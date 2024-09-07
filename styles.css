@@ -1,0 +1,143 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+.contentGroup {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #43ACA4;
+    border: none;
+}
+
+.logoContainer{
+    background-color: white;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.contentContainer {
+    padding-left: 75px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    color: #B8D8D8;
+}
+
+.textGroup :first-child {
+    font-family: "Roboto", sans-serif;
+    color: #B8D8D8;
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+}
+
+.textGroup :last-child {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+.bgImageContainer {
+    background-image: url('bg.png');
+    background-size: cover; 
+    background-position: center;
+    width: 50%;
+    min-height: 80vh;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 30rem;
+} 
+
+}
+
+@media (max-width: 1024px) {
+    .contentGroup {
+        background-color: #43ACA4;
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .logoContainer {
+        max-width: 100px;
+        background-color: white;
+        border-radius: 100%;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .textGroup :first-child {
+        font-family: "Roboto", sans-serif;
+        color: #B8D8D8;
+        font-size: 1.75rem;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .textGroup :last-child {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .bgImageContainer {
+        background-image: url('bg.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 10vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
